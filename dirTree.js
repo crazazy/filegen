@@ -1,3 +1,5 @@
+//code for this file heavily based on the following SO page
+//https://stackoverflow.com/a/11194896
 const fs = require('fs');
 const path = require('path');
 function dirTreeJSON(folder, origFolder=folder) {
