@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>File Server</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="lib/style.css">
+		<script src="gen/tree.js"></script>
+	</head>
+	<body>
+		<h1 id="name">Browse files in {{name}}</h1>
+		<div id="app">
+			<div v-if='content!=tree' class="segment">
+				<a @click='higher' class='go-up'>../</a>
+			</div>
+			<div v-for='thing in content.children' class="segment">
+				<a v-if='thing.type === "folder"' class='folder' @click='deeper(thing)'>&#x1F4C2; {{thing.name}}</a>
+				<a v-else :href='"./"+thing.path' class="item">&#x1F5CE; {{thing.name}}</a>
+			</div>
+		</div>
+		<script src="gen/vue.js"></script>
+		<script src="lib/script.js"></script>
+	</body>
+</html>

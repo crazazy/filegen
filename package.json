@@ -1,0 +1,17 @@
+{
+  "name": "filegen",
+  "version": "1.0.0",
+  "description": "Generates a static site for filehosting",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf gen && mkdir gen && node build.js"
+  },
+  "keywords": [],
+  "author": "Erik Oosting",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {}
+}
