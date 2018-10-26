@@ -27,7 +27,7 @@ export default class App extends Vue {
     currentDirectory = FILES;
 
     get name() {
-        return [...(this.parents), this.currentDirectory.name].join('/');
+        return [...this.parents.map(x=>x.name), this.currentDirectory.name].join('/');
     }
 
     enter(directory) {
