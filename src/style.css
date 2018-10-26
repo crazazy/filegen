@@ -19,7 +19,7 @@ a:hover {
 	font-style: oblique;
 	font-weight: bold;
 }
-#app {
+#list {
 	display: grid;
 	position: absolute;
 	left: 40px;
