@@ -6,8 +6,8 @@
                 <a @click="leave()" class="go-up">../</a>
             </div>
             <div v-for="file in currentDirectory.children" class="segment">
-                <a v-if="file.type === 'directory'" class="foilder" @click="enter(file)">&#x1F4C2; {{ file.name }}</a>
-                <a v-else :href="`./files/${file.path}`" class="item">&#x1F5CE; {{ file.name }}</a>
+                <a v-if="file.type === 'directory'" @click="enter(file)">&#x1F4C2; {{ file.name }}</a>
+                <a v-else :href="`./files/${file.path}`">&#x1F5CE; {{ file.name }}</a>
             </div>
         </div>
     </div>
