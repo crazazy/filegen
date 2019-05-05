@@ -9,7 +9,9 @@
   "dependencies": {
     "directory-tree": "^2.2.1",
     "http-vue-loader": "^1.4.0",
-    "vue": "^2.6.10"
+
+    "vue": "^2.6.10",
+    "vue-property-decorator": "^8.1.0"
   },
   "devDependencies": {
     "@pika/web": "^0.4.2"
@@ -40,7 +42,8 @@
   "@pika/web": {
     "webDependencies": [
       "vue/dist/vue.esm.browser.js",
-      "http-vue-loader/src/httpVueLoader.js"
+      "http-vue-loader/src/httpVueLoader.js",
+      "vue-property-decorator"
     ]
   }
 }
