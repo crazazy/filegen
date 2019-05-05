@@ -14,8 +14,7 @@
 </template>
 
 <script>
-import { Component, Vue } from 'vue-property-decorator';
-
+import { Component, Vue } from '../web_modules/vue-property-decorator';
 import FILES from '../assets/files.json';
 
 @Component({
