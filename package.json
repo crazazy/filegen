@@ -9,9 +9,9 @@
   "dependencies": {
     "directory-tree": "^2.2.1",
     "http-vue-loader": "^1.4.0",
-
     "vue": "^2.6.10",
     "vue-property-decorator": "^8.1.0"
+
   },
   "devDependencies": {
     "@pika/web": "^0.4.2"
