@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-=======
 import { a as createCommonjsModule, b as commonjsGlobal } from '../../common/chunk-bca66c50.js';
->>>>>>> temp
 
 var httpVueLoader = createCommonjsModule(function (module, exports) {
 (function umd(root,factory){
