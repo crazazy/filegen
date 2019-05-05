@@ -40,7 +40,7 @@
   "homepage": "https://github.com/crazazy/filegen#readme",
   "@pika/web": {
     "webDependencies": [
-      "vue/dist/vue.esm.browser.js",
+      "vue",
       "http-vue-loader/src/httpVueLoader.js",
       "vue-property-decorator"
     ]
