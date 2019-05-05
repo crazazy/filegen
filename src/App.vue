@@ -14,10 +14,7 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-=======
 import { Component, Vue } from '../web_modules/vue-property-decorator';
->>>>>>> temp
 import FILES from '../assets/files.json';
 
 module.exports = {
