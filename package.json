@@ -21,9 +21,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
+    "build": "npm run dirs && rollup -c",
     "dirs": "node build-dir.js",
-    "dev": "rollup -cw"
+    "dev": "npm run dirs && rollup -cw"
   },
   "repository": {
     "type": "git",
@@ -41,12 +41,5 @@
   "bugs": {
     "url": "https://github.com/crazazy/filegen/issues"
   },
-  "homepage": "https://github.com/crazazy/filegen#readme",
-  "@pika/web": {
-    "webDependencies": [
-      "vue",
-      "http-vue-loader/src/httpVueLoader.js",
-      "vue-property-decorator"
-    ]
-  }
+  "homepage": "https://github.com/crazazy/filegen#readme"
 }
