@@ -14,25 +14,28 @@
 </template>
 
 <script>
-import { Component, Vue } from '../web_modules/vue-property-decorator';
 import FILES from '../assets/files.json';
-
-@Component({
-    components: {}
-})
-export default class App extends Vue {
-    content = FILES;
-    parents = [];
-    currentDirectory = FILES;
-    get name() {
-        return this.currentDirectory.name;
-    }
-    enter(directory) {
-        this.parents.push(this.currentDirectory);
-        this.currentDirectory = directory;
-    }
-    leave() {
-        this.currentDirectory = this.parents.pop();
-    }
+export default {
+	data: function() {
+		return {
+			content: FILES,
+			parents: [],
+			currentDirectory: FILES
+		}
+	},
+	methods: {
+		enter: function(directory) {
+			this.parents.push(this.currentDirectory);
+			this.currentDirectory = directory;
+		},
+		leave: function() {
+			this.currentDirectory = this.parents.pop();
+		}
+	},
+	computed: {
+		name: function() {
+			return this.currentDirectory.name;
+		}
+	}
 }
 </script>

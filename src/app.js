@@ -1,6 +1,5 @@
-import Vue from '../web_modules/vue.js'
-import httpVueLoader from '../web_modules/http-vue-loader/src/httpVueLoader.js'
-
+import Vue from 'vue'
+import App from './App.vue'
 new Vue({
-	render: (h) => h('div', httpVueLoader('./App.vue'))
+	render: (h) => h(App)
 }).$mount('#app')

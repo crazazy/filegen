@@ -2,23 +2,28 @@
   "name": "filegen",
   "version": "1.0.0",
   "description": "Generate a static file index for some files.",
-  "main": "build-dir.js",
+  "main": "dist/app.js",
+  "module": "dist/app.es.js",
   "directories": {
     "doc": "docs"
   },
   "dependencies": {
-    "http-vue-loader": "^1.4.0",
-    "vue": "^2.6.10",
-    "vue-property-decorator": "^8.1.0"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@pika/web": "^0.4.2"
+    "rollup": "^1.19.4",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue-template-compiler": "^2.6.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "pika-web --clean",
-    "minimize": "pika-web --clean --optimize",
-    "build": "node build-dir.js && npm run minimize"
+    "build": "rollup -c",
+    "dirs": "node build-dir.js",
+    "dev": "rollup -cw"
   },
   "repository": {
     "type": "git",
