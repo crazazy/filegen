@@ -18,6 +18,8 @@ a:hover {
 .go-up {
 	font-style: oblique;
 	font-weight: bold;
+	border-style: none;
+	color: #08d;
 }
 #list {
 	display: grid;
