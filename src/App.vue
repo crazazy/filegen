@@ -6,8 +6,8 @@
                 <button @click="leave()" class="go-up">../</button>
             </div>
             <div v-for="file in currentDirectory.children" class="segment">
-                <a v-if="file.type === 'directory'" @click="enter(file)">&#x1F4C2; {{ file.name }}</a>
-                <a v-else :href="`./files/${file.path}`">&#x1F5CE; {{ file.name }}</a>
+                <a v-if="file.type === 'directory'" @click="enter(file)">📁 {{ file.name }}</a>
+				<a v-else @click="goto(file)">📄 {{ file.name }}</a>
             </div>
         </div>
     </div>
@@ -24,6 +24,9 @@ export default {
 		}
 	},
 	methods: {
+		goto: function(file) {
+			window.location.href = `./files/${file.path}`
+		},
 		enter: function(directory) {
 			this.parents.push(this.currentDirectory);
 			this.currentDirectory = directory;
