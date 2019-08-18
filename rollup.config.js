@@ -12,14 +12,16 @@ export default {
 	input: 'src/app.js',
 	output: [
 		{
-			format: 'umd',
+			format: 'iife',
 			file: pkg.main,
-			intro: injectable
+			intro: injectable,
+			sourcemap: true
 		},
 		{
 			format: 'esm',
 			file: pkg.module,
-			intro: injectable
+			intro: injectable,
+			sourcemap: true
 		}
 	],
 	plugins: [
