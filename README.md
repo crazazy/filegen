@@ -11,7 +11,7 @@ exists a directory called `files/` equivalent to the `files/` directory in the
 root project; you might want to symlink or copy those.
 
 ## Development
-Run `yarn run dev` or `npm run dev` to start a development server.
+Run `yarn run dev` or `npm run dev` to start a filesysteam daemon. You will have to reload the browser manually on each save 
 
 ## License
 MIT; see [LICENSE](LICENSE).
