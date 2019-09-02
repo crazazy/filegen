@@ -1,6 +1,6 @@
 {
   "name": "filegen",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "Generate a static file index for some files.",
   "main": "dist/app.js",
   "module": "dist/app.es.js",
@@ -13,7 +13,6 @@
   "devDependencies": {
     "rollup": "^1.20.3",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-inject": "^3.0.1",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.1",
