@@ -21,8 +21,12 @@ const dirTree = (folder, originalFolder = folder) => {
     };
 };
 
-if (!fs.existsSync(path.join(__dirname, 'assets/'))) {
-    fs.mkdirSync(path.join(__dirname, 'assets/'));
-}
+module.exports = dirTree;
 
-fs.writeFileSync(path.join(__dirname, 'assets/files.json'), JSON.stringify(dirTree(path.join(__dirname, 'files/'))));
+if (module.parent === null) {
+    if (!fs.existsSync(path.join(__dirname, 'assets/'))) {
+        fs.mkdirSync(path.join(__dirname, 'assets/'));
+    }
+
+    fs.writeFileSync(path.join(__dirname, 'assets/files.json'), JSON.stringify(dirTree(path.join(__dirname, 'files/'))));
+}
