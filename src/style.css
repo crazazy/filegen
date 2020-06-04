@@ -1,39 +1,49 @@
 body {
-	font-family: arial;
+  font-family: arial;
 }
 a {
-	color: #08d;
-	font-style: normal;
-	text-decoration: none;
-	cursor: pointer;
+  color: #08d;
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
 }
 a:visited {
-	color: #08d;
-	font-style: normal;
-	text-decoration: none;
+  color: #08d;
+  font-style: normal;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .go-up {
-	font-style: oblique;
-	font-weight: bold;
-	border-style: none;
-	color: #08d;
+  font-style: oblique;
+  font-weight: bold;
+  border-style: none;
+  color: #08d;
 }
 #list {
-	display: grid;
-	position: absolute;
-	left: 40px;
-	right: 40px;
-	margin-top: 40px;
-	grid-template-columns: repeat(4, 1fr);
-	border-style: solid;
-	border-width: 1px;
-	border-color: #eee;
+  display: grid;
+  left: 40px;
+  right: 40px;
+  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eee;
 }
 .segment {
-	padding: 20px;
-	text-align: center;
-	position: relative;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.fileContent {
+  background-color: #efefef;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #eee;
+  left: 40px;
+  right: 40px;
+  padding-left: 50pt;
+  padding-right: 50pt;
 }
