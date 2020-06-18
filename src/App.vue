@@ -31,10 +31,9 @@ export default {
     },
     methods: {
         goto: function(file) {
-            const self = this;
             fetch(`./files/${file.path}`)
                 .then(res => res.text())
-                .then(res => self.fileContent = '\n' + res)
+                .then(res => this.fileContent = '\n' + res)
                 .then(()  => this.enter(file))
         },
         enter: function(directory) {
