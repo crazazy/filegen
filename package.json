@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "rollup": "^2.21.0",
@@ -17,7 +17,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-vue": "^5.1.9",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
