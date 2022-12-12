@@ -11,7 +11,7 @@
     "vue": "^2.7.9"
   },
   "devDependencies": {
-    "postcss": ">=8.4.16",
+    "postcss": ">=8.4.20",
     "rollup": "^2.21.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
